@@ -61,7 +61,7 @@ public final class ControllerConfig {
 		if (dataFilePath != null && dataFilePath.trim().length() != 0) {
 			System.out.println("资料文件路径为 :  " + dataFilePath);
 		}
-		 PropertyConfigurator.configure(dataFilePath + "/log4j.properties");
+		 //PropertyConfigurator.configure(dataFilePath + "/log4j.properties");
 		 log.info("资料文件路径为 :  " + dataFilePath);
 	}
 
