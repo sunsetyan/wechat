@@ -46,6 +46,7 @@
 	<div id="result"></div>
 	<div>
 		<p>1. 单文件表单上传</p>
+		Wrong HTTP method!
 		<div>
 			<form action="f/upload.nut" method="post"
 				enctype="multipart/form-data">
@@ -53,7 +54,16 @@
 					value="提交" />
 			</form>
 		</div>
-		<p>2.Servlet通过forward转向/WEB-INF/pages/hi.html页面 <a href="sayhi">/hi</a><br /></p>
+		<p>
+			2.Servlet通过forward转向/WEB-INF/pages/hi.html页面 <a href="sayhi">/sayhi</a><br />
+		</p>
+		<p>
+			3.FreeMarker加上nutz:<a href="hellonut/dohello">/dohello</a><br />
+		</p>
+		<form action="http://localhost:8086/sunrise22-galaxy/hellonut/dohello.nut" method="POST" enctype="multipart/form-data">
+			仅仅只是为了触发POST方法：<input type="text" name="name" tabindex="30" size="15"
+				maxlength="5" title="请输入姓名" /><br> <input type="submit" value="提交" name="name">
+		</form>
 	</div>
 </body>
 </html>

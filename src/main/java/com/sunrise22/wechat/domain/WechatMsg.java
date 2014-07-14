@@ -1,6 +1,6 @@
 package com.sunrise22.wechat.domain;
 
-import org.nutz.weixin.bean.JsonIgnore;
+import org.nutz.json.JsonIgnore;
 
 /** 统一封装wechat消息 */
 public class WechatMsg {
@@ -17,7 +17,6 @@ public class WechatMsg {
 	private String mediaId;
 	private String format;
 	private String thumbMediaId;
-	
 	
 	@JsonIgnore(null_double=0)
 	private double location_X;
